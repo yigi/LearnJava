@@ -53,3 +53,19 @@ String substring(): This method returns a new String that contains a subsequence
 String toString(): This method returns a string representing the data in this sequence.
  
 void trimToSize(): This method attempts to reduce storage used for the character sequence. 
+
+
+```Java
+String sql = "Insert Into Users (name, age)";
+sql += " values ('" + user.getName();
+sql += "', '" + user.getage();
+sql += "')";
+
+//The above-mentioned code could be written using StringBuilder like this,
+
+StringBuilder sqlSb = new StringBuilder("Insert Into Users (name, age)");
+sqlSb.append(" values ('").append(user.getName());
+sqlSb.append("', '").append(user.getage());
+sqlSb.append("')");
+String sqlSb = sqlSb.toString();
+```
