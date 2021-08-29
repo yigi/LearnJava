@@ -9,3 +9,8 @@ public static int countBits(int n)
     }
     return count;
 }
+
+public static int countBits(int n)
+{
+    return Integer.bitCount(n);
+}
