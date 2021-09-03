@@ -49,3 +49,21 @@ public class Counter {
     }
 }
 ```
+
+1) Immutable objects are by default thread-safe because their state can not be modified once created. Since String is immutable in Java, it's inherently thread-safe.
+
+2) Read-only or final variables in Java are also thread-safe in Java.
+
+3) Locking is one way of achieving thread-safety in Java.
+
+4) Static variables if not synchronized properly become a major cause of thread-safety issues.
+
+5) Example of thread-safe class in Java: Vector, Hashtable, ConcurrentHashMap, String, etc.
+
+6) Atomic operations in Java are thread-safe like reading a 32-bit int from memory because it's an atomic operation it can't interleave with other threads.
+
+7) local variables are also thread-safe because each thread has there own copy and using local variables is a good way to write thread-safe code in Java.
+
+8) In order to avoid thread-safety issues minimize the sharing of objects between multiple threads.
+
+9) Volatile keyword in Java can also be used to instruct thread not to cache variables and read from main memory and can also instruct JVM not to reorder or optimize code from threading perspective.
