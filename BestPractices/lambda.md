@@ -32,3 +32,9 @@ also you can remove return statement with braces
 Comparator<Employee> byName = 
     (e1,e2) -> e1.getName().compareTo(e2.getName());
 ```
+
+use lambdas each time
+
+```java
+"some printable text" vs. () -> "some printable text"
+```
